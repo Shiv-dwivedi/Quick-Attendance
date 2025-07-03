@@ -1,0 +1,139 @@
+/* General styles */
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+.app-container {
+  flex-direction: column;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+.main-content {
+  margin-top: 70px;
+}
+.class-card {
+  transition: all 0.3s ease; /* Smooth transition for dimming effect */
+}
+
+.class-card.dimmed {
+  opacity: 0.5; /* Dims the course card */
+  filter: grayscale(70%); /* Optional: adds grayscale effect */
+  z-index: 0; /* Make sure dimmed cards are visually behind */
+}
+
+.class-card:not(.dimmed) {
+  z-index: 1; /* Ensures non-dimmed cards are in front */
+}
+
+
+/* Sidebar styles */
+.sidebar {
+  width: 240px;
+  background-color: #3c4043;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Courses grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-row: auto;
+  gap: 20px;
+}
+
+.class-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 300px;
+}
+
+.class-card {
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Ensures rounded corners for header */
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* Make the card clickable */
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #fff;
+}
+
+.class-card:hover {
+  transform: translateY(-5px); /* Elevate on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.class-card-header {
+  background-color: #28a745; /* Green background */
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 12px; /* Round top corners */
+  border-top-right-radius: 12px;
+}
+
+.class-card-header h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.batch-text {
+  font-size: 1.1em;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.class-card-body {
+  padding: 16px;
+}
+
+.class-card-body p {
+  margin: 8px 0;
+}
+
+
+  .class-card {
+    /* Other existing styles */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .circular-progress {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  
+  .circular-progress svg {
+    transform: rotate(-90deg);
+  }
+  
+  .circular-progress .percentage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  

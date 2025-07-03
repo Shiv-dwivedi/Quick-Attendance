@@ -1,0 +1,200 @@
+.dashboard-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .class-list-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .class-list-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #57b846;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #459b3c;
+  }
+  
+  .modal-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* General styling */
+/* General styling */
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  overflow: hidden; /* Ensure no content overflows */
+}
+
+/* Left section (title) */
+.header__left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevent shrinking of title */
+}
+
+.header__left h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: rgb(44, 193, 39); /* Green text */
+  white-space: nowrap; /* Prevent wrapping to a new line */
+  font-size: 35px; /* Reduce font size for better responsiveness */
+  overflow: hidden;
+  text-overflow: ellipsis; /* If it overflows, show "..." */
+}
+
+/* Center section (search bar) */
+.header__center {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow search bar to grow */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header__searchInput__element {
+  /* background: #ebebeb; */
+  /* border-radius: 20px;
+  padding: 5px 20px; */
+  /* outline: none;
+  border: none; */
+  flex-grow: 1; /* Allow the search bar to grow */
+  margin-right: 10px; /* Space between search bar and button */
+  min-width: 200px; /* Minimum width for smaller screens */
+  max-width: 500px; /* Maximum width for larger screens */
+}
+
+.header__searchButton {
+  color: #57b846;
+  margin-left: 10px; /* Add spacing */
+  background: white; /* Set initial background color */
+  border-radius: 50%; /* Make it circular like the add button */
+  transition: background 0.3s, color 0.3s; /* Transition effect for color and background */
+}
+
+/* Change color on hover */
+.header__searchButton:hover {
+  background: #57b846; /* Change background color */
+  color: #57b846; /* Change text color */
+}
+
+/* Right section (add button, avatar, menu) */
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between add button and avatar */
+  flex-shrink: 0; /* Prevent shrinking of right-side icons */
+}
+
+.header__addButton,
+.header__avatar {
+  background: white;
+  color: #57b846;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.header__addButton:hover{
+  background: #57b846;
+  color: #57b846;;
+}
+.header__avatar:hover {
+  background: #57b846;
+  color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+    height: auto; /* Let the height adjust based on content */
+  }
+
+  .header__left h1 {
+    font-size: 1.2rem; /* Reduce font size further for small screens */
+    white-space: nowrap; /* Ensure it stays on one line */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header__center {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .header__searchInput {
+    min-width: 150px ; /* Reduce width further for smaller screens */
+  }
+}
+
+@media (max-width: 680px) {
+  .header__left h1 {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .header__right {
+    gap: 10px; /* Reduce space between icons for smaller screens */
+  }
+
+  .header__searchInput {
+    min-width: 120px ; /* Further reduce the width of the search bar */
+  }
+}
+
+
+.attendance-status {
+  height: 5px; /* Adjust height as needed */
+  margin-top: 0; /* Add margin if you want some spacing */
+  margin-bottom: 10px; /* Space between attendance strip and body */
+}

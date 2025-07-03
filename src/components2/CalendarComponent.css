@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #57b846;
+    --secondary-color: #4CAF50;
+    --light-background: #f0f9f0;
+    --event-color: red;
+
+  }
+  
+  * {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .calendar-day {
+    position: relative; /* Ensure child elements are positioned relative to this */
+    text-align: center;
+    padding: 15px;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 24px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown {
+    width: 45%;
+  
+    border-radius: 20px; /* Round corners */
+    overflow: hidden; /* Clip the corners */
+  }
+  
+  .calendar .MuiInputBase-root {
+    border-radius: 35px !important;
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    font-weight: bold !important;
+    text-align: center;
+  
+  }
+  
+  .calendar .MuiSelect-icon {
+    color: white !important;
+  }
+  
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .calendar-day {
+    text-align: center;
+    padding: 15px;
+    height: 100%;
+    width: 50%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 24px;
+    
+  }
+  
+  .calendar-day:hover {
+    background-color: #39bed2;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 24px;
+  }
+  
+  .selected-day {
+    background-color: var(--primary-color);
+    color: white;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 24px;
+    flex-direction: row;
+  }
+  
+  .event-circle {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: var(--event-color);
+    border-radius: 50%;
+    flex-direction: row;
+  }
+  
+  .attendance-icon {
+    position: absolute;
+    color: #3338d1;
+    z-index: 1; /* Ensure it is above other elements */
+    top: 0;
+    right: 0;
+    margin: 10px; /* Add some margin from the corner */
+  }
+
+  .attendance-icon.overlap {
+    color: #3338d1; /* Change color if overlapping */
+  }
+  
+  .modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    outline: none;
+  }
+

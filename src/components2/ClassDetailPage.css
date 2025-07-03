@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+
+* {
+    font-family: 'quicksand', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+
+.class-detail-container {
+    max-width: 900px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.class-detail-container h2 {
+    font-size: 2.5em;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.class-detail-container p {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+    color: #555;
+}
+
+.student-list {
+    margin-top: 2em;
+}
+
+.student-list h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #222;
+}
+
+.student-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.student-list li {
+    padding: 0.8em;
+    font-size: 1.1em;
+    background: #f9f9f9;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.student-list li:hover {
+    background: #e6f7ff;
+}
+
+.take-attendance-btn {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #57b846;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+
+.take-attendance-btn:hover {
+    background-color: #222;
+}
+
+/* Calendar and Attendance Chart Styling */
+.calendar-component, .attendance-chart {
+    margin-top: 2em;
+}
+
+.calendar-component {
+    border: 1px solid #ebebeb;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.attendance-chart {
+    margin-top: 2em;
+    border: 1px solid #ebebeb;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+    .class-detail-container {
+        padding: 1em;
+    }
+    
+    .class-detail-container h2 {
+        font-size: 2em;
+    }
+
+    .take-attendance-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .calendar-component, .attendance-chart {
+        margin-top: 1em;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .class-detail-container {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .class-detail-container h2 {
+        font-size: 1.5em;
+    }
+
+    .take-attendance-btn {
+        padding: '10px';
+        font-size: 1em;
+        
+    }
+}
+
+.pageContainer {
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 10px 0;
+  }
+  
+  .className {
+    font-weight: bold;
+  }
+  
+  .headerButtons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .headerButton {
+    background-color: #66bb6a;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    text-transform: none;
+    margin-left: 10px;
+  }
+  
+  .headerButton:hover {
+    background-color: #57a05a;
+  }
+  
+  .editIcon {
+    margin-left: 10px;
+    background-color: #fff;
+    color: #66bb6a;
+    border-radius: 50%;
+  }
+  
+  .editIcon:hover {
+    background-color: #66bb6a;
+    color: #fff;
+  }
+  
+  .card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .studentGrid {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .studentCard {
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #66bb6a;
+  }
+  
+  .studentName {
+    font-weight: bold;
+  }
+  
+  .chipContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .fab {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #66bb6a;
+  }
+  
+  .fab:hover {
+    background-color: #57a05a;
+  }
+  
+  .fabGroup {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+  }
+  
+  .fabOption {
+    background-color: #66bb6a;
+    margin-bottom: 10px;
+  }
+  
+  .fabOption:hover {
+    background-color: #57a05a;
+  }
+  

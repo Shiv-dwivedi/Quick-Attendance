@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+
+* {
+    font-family: 'quicksand', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+
+.form-modal {
+    position: relative;
+    width: 450px;
+    height: auto;
+    margin-top: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-modal button {
+    cursor: pointer;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 1em;
+    z-index: 2;
+    outline: none;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.form-modal .btn {
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.8em 1em;
+    transition: 0.5s;
+    border: 1px solid #ebebeb;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.form-modal .login,
+.form-modal .signup {
+    background: #57b846;
+    color: #fff;
+}
+
+.form-modal .login:hover,
+.form-modal .signup:hover {
+    background: #222;
+}
+
+.form-toggle {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.form-toggle button {
+    width: 50%;
+    float: left;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border: none;
+    transition: 0.2s;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.form-toggle button:nth-child(1) {
+    border-bottom-right-radius: 20px;
+}
+
+.form-toggle button:nth-child(2) {
+    border-bottom-left-radius: 20px;
+}
+
+#login-toggle {
+    background: #57b846;
+    color: #fff;
+}
+
+.form-modal form {
+    position: relative;
+    width: 90%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#student-form,
+#teacher-form {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1em;
+}
+
+/* #teacher-form {
+    display: none;
+} */
+
+#student-form button,
+#teacher-form button {
+    width: 100%;
+    margin-top: 0.5em;
+    padding: 0.6em;
+}
+
+.form-modal input {
+    position: relative;
+    width: 100%;
+    font-size: 1em;
+    padding: 1.2em 1.7em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    border-radius: 20px;
+    border: none;
+    background: #ebebeb;
+    outline: none;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.form-modal input:focus,
+.form-modal input:active {
+    transform: scaleX(1.02);
+}
+
+.form-modal input::-webkit-input-placeholder {
+    color: #222;
+}
+
+.form-modal p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-modal p a {
+    color: #57b846;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.form-modal p a:hover {
+    color: #222;
+}
+
+@media only screen and (max-width: 500px) {
+    .form-modal {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    i {
+        display: none !important;
+    }
+}
+
+/* Styling for the batch dropdown */
+.form-modal select {
+    position: relative;
+    width: 100%;
+    font-size: 1em;
+    padding: 1.2em 1.7em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    border-radius: 20px;
+    border: none;
+    background: #ebebeb;
+    outline: none;
+    font-weight: bold;
+    transition: 0.4s;
+    appearance: none; /* Removes the default dropdown arrow */
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: none; /* Firefox */
+}
+
+/* Add a custom arrow to the dropdown */
+.form-modal select::after {
+    content: '▼';
+    font-size: 1.2em;
+    color: #222;
+    position: absolute;
+    right: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensures the arrow doesn't block click events */
+}
+
+/* Dropdown hover and focus effect */
+.form-modal select:hover,
+.form-modal select:focus {
+    transform: scaleX(1.02);
+    background: #e0e0e0; /* Slight color change on hover/focus */
+}
+
+/* Ensuring the placeholder text color is consistent */
+.form-modal select option {
+    color: #222;
+}
+
+/* Adjusting for smaller screens */
+@media only screen and (max-width: 500px) {
+    .form-modal {
+        width: 100%;
+    }
+    .form-modal select {
+        padding: 1em 1.4em;
+    }
+}
+.form-modal {
+    position: relative;
+    width: 450px;
+    height: auto;
+    margin-top: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1.5em; /* Added padding to create space at the bottom */
+}
+
+.form-modal .btn {
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.8em 1em;
+    transition: 0.5s;
+    border: 1px solid #ebebeb;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    width: 100%; /* Ensure the button takes the full width */
+}
+
+.form-modal p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1em; /* Add some space above the 'Not Registered?' text */
+    margin-bottom: 0; /* Remove bottom margin to avoid extra space */
+    text-align: center; /* Center-align the text */
+}
+

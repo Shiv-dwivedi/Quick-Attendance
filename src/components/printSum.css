@@ -1,0 +1,15 @@
+@media print {
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+  
+    body {
+      font-size: 12pt;
+    }
+  
+    .PrintSummary {
+      page-break-before: always;
+    }
+  }
+  
