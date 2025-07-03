@@ -1,76 +1,84 @@
-# 🎯 Quick Attendance – Real-Time Face Recognition Attendance System
+# 🎓 Quick Attendance – Real-Time Face Recognition Based System
 
-> 🚀 A final-year capstone project to revolutionize attendance management using AI-powered face recognition, built with a full-stack MERN + FastAPI architecture.
-
----
-
-## 📸 Live Demo (Optional)
-<!-- [![Demo](https://img.shields.io/badge/Live-Demo-blue)](https://your-demo-link.com) -->
-
----
-
-## 📚 Table of Contents
-
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [System Architecture](#system-architecture)
-- [Screenshots](#screenshots)
-- [Installation](#installation)
-- [Future Scope](#future-scope)
-- [License](#license)
+> A full-stack intelligent attendance system capable of identifying **10+ students simultaneously** with high precision using live webcam feed and facial recognition.
 
 ---
 
 ## 🧠 Project Overview
 
-**Quick Attendance** is an intelligent web platform that automates student attendance using **real-time face recognition**. Teachers can manage classes, record attendance using a webcam, and generate detailed reports. Students can track their attendance history and request updates for corrections.
-
-Built as a full-stack solution integrating AI (face recognition) with robust web backend and frontend technologies.
+**Quick Attendance** is a smart classroom attendance system built to automate and streamline the attendance process using **live multi-face detection**. It replaces traditional manual methods with a real-time camera-based approach, allowing teachers to mark attendance instantly while students can track and manage their records.
 
 ---
 
-## ✨ Features
+## ✨ Core Highlights
 
-👩‍🏫 **For Teachers**
-- Live face recognition for marking attendance
-- Manual attendance updates
-- Attendance request approval/rejection
-- Class creation, deletion, and student management
-- PDF report generation
-
-🧑‍🎓 **For Students**
-- View attendance history
-- Request corrections
-- Track attendance percentage per subject
-
-🔐 **Other Highlights**
-- Multi-face detection
-- WebSocket real-time communication
-- Role-based access (student/teacher)
-- Attendance reports exportable in print-ready format
+- 🎯 Real-time face recognition of **10+ students simultaneously**  
+- 📸 Automatic attendance marking via webcam or media upload  
+- 🧑‍🏫 Role-based system: Teacher (manage classes) & Student (track records)  
+- 🔁 Attendance correction request & approval workflow  
+- 📊 Printable attendance reports  
+- 🔐 Built with a modern full-stack: FastAPI + Express + MongoDB + React
 
 ---
 
-## 🛠️ Tech Stack
+## 🖼️ System Architecture
 
-| Layer        | Technology                        |
-|--------------|-----------------------------------|
-| Frontend     | React, HTML/CSS, JavaScript       |
-| Backend      | FastAPI (Python), Express.js (Node.js) |
-| Database     | MongoDB                           |
-| Face Recognition | OpenCV, `face_recognition` (dlib) |
-| Communication| WebSockets                        |
+![Architecture Diagram](architecture.png)
+
+> *This diagram illustrates the flow of attendance data across FastAPI (Python), Express.js (Node.js), MongoDB, and the React-based frontend.*
 
 ---
 
-## 🧩 System Architecture
+## 🚀 Features Breakdown
 
-```plaintext
-React Frontend
-    |
-    v
-Express.js (Attendance Server) <--> MongoDB
-    |
-    v
-FastAPI (Face Recognition API) <--> OpenCV + dlib
+### 👩‍🏫 Teachers
+- Create/manage/delete classes
+- Take attendance (live / upload)
+- Approve or reject student requests
+- Generate printable reports
+
+### 🧑‍🎓 Students
+- View personal attendance logs
+- Request attendance corrections
+- Track attendance percentage across subjects
+
+---
+
+## ⚙️ Technical Overview
+
+| Layer        | Technology                          |
+|--------------|--------------------------------------|
+| Frontend     | React.js                             |
+| Backend      | FastAPI (Python), Express (Node.js)  |
+| Database     | MongoDB                              |
+| Recognition  | OpenCV + `face_recognition` (dlib)   |
+| Communication| WebSockets                           |
+
+---
+
+## 📊 Real-World Performance
+
+- Achieved consistent real-time recognition of **10+ students simultaneously**
+- Delivered near-perfect accuracy under well-lit conditions
+- Quick frame capture and identity match using optimized face encodings
+- Integrated error handling and fallback for correction requests
+
+---
+
+## 🔮 Future Scope
+
+- 🔔 Notification system for attendance status or updates  
+- 📤 Allow students to submit updated face photos   
+- 🛡️ Admin portal for user roles, system settings, and audit logs  
+- 🧾 More export formats (CSV, Excel, etc.)
+
+---
+
+## 📄 License & Credits
+
+> Developed by **Shiv Dwivedi**   
+> Department of Computer Science & Information Technology, SHUATS  
+> © 2025 – All Rights Reserved
+
+---
+
